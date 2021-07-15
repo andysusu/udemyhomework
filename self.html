@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問卷調查</title>
+    <link rel="stylesheet" href="self.css"/>
+</head>
+<body>
+
+    <h1>秦始皇資訊問卷調查</h1>
+    <!--這是問卷調查-->
+    <form action="" method="">
+        <label for="account">帳號</label>
+        <input 
+        id="account" 
+        type="text"   
+        name="inputname"
+        required
+        />
+        <br/>
+        <label for="gender">性別</label>
+        <!--練習select 跟option的例子-->
+        <select name="gender" id="性別" required>
+            <option value=""></option>
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+            <option value="other">其他</option>
+        </select>
+        <br />
+        <!--有password的type-->
+        <label for="password">密碼</label>
+        <input 
+            id="password" 
+            type="password"
+            name="password"
+            maxlength="12"
+            minlength="6"
+            required
+        />
+        <br />
+        <!--email的type-->
+        <label for="mail">信箱</label>
+        <input
+            id="mail"
+            type="email"
+            name="mail"
+        />
+        <br />
+        <label for="age">年齡</label>
+        <!--input number type-->
+        <input 
+            id="age" 
+            type="number"
+            name="age"
+            value="18"
+        />
+        <br />
+        <label for="area">地區</label>
+        <select id="area" name="area">
+            <option value="宜蘭">宜蘭市</option>
+            <option value="台北">台北市</option>
+            <option value="新北">新北市</option>
+            <option value="基隆">基隆市</option>
+            <option value="新竹">新竹市</option>
+            <option value="桃園">桃園市</option>
+            <option value="苗栗">苗栗市</option>
+            <option value="台中">台中市</option>
+            <option value="南投">南投市</option>
+        </select>
+        
+        <br />
+        <hr />
+        <label for="advice">網站建議：</label>
+        <br />
+        <!--textarea-->
+        <textarea
+            id="advice"
+            name="advice"
+            cols="30"
+            rows="10"
+            placeholder="感謝您的建議！"
+        ></textarea>
+        <br />
+        <input id="check" type="checkbox" name="check"
+        />
+        <!--訂閱-->
+        <label for="check">訂閱秦始皇</label>
+        <br />
+        <!--提交buttom-->
+        <button type="submit">提交表單</button>
+    </form>
+    
+</body>
+<script src="/udemyhomework/jquery-3.6.0.min.js"></script>
+</html>
